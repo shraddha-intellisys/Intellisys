@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "./Career.css";
 
 const Career = () => {
@@ -235,7 +235,7 @@ const Career = () => {
       const result = await response.json();
       if (response.ok) {
         alert(result.message || "✅ Application submitted successfully!");
-        closeFormPopup(); // Optional: clear form fields if needed
+        closeFormPopup(); 
       } else {
         alert(result.message || "⚠️ Something went wrong during submission.");
       }
@@ -434,7 +434,7 @@ const Career = () => {
             <h2 className="Custom text-2xl font-bold mb-2">Application Form</h2>
             <hr className="mb-4" />
 
-            <form onSubmit={submitForm}>
+            <form id="apply" onSubmit={submitForm}>
               {/* Position Field */}
               <div className="form-group mb-4">
                 <label htmlFor="position" className="block font-bold mb-1">

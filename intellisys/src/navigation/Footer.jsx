@@ -8,7 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
-import intellisys from "../assestes/intellisys.png";
+import intellisys_img from "../assestes/intellisys_img.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
         <div className="footer-column">
           <div className="footer-logo">
             <img
-              src={intellisys}
+              src={intellisys_img}
               alt="Company Logo"
               className="footer-logo-img"
             />
@@ -111,12 +112,9 @@ const Footer = () => {
         </p>
         <p>
           Designed by{" "}
-          <a
-            href="https://www.intellisysitsolutions.com/"
-            className="footer-designer"
-          >
+          <Link to="/" className="footer-designer">
             Team INTELLISYS
-          </a>
+          </Link>
         </p>
       </div>
     </footer>

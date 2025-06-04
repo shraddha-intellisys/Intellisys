@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { BiChevronDown } from 'react-icons/bi';
-import logo1 from "../assestes/logo1.gif";
+import intellisys_logo from "../assestes/intellisys_logo.gif";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -61,7 +61,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <Link to="/" className="navbar-logo-container">
         <img 
-          src={logo1} 
+          src={intellisys_logo} 
           alt="Intellisys Logo" 
           className="navbar-logo" 
         />

@@ -22,11 +22,11 @@ import {
   FaLaravel,
   FaMicrosoft,
   FaAws,
-  FaCloud,
   FaCogs,
   FaTasks,
   FaJsSquare,
 } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -191,7 +191,7 @@ const Technology = () => {
           <h3>AWS</h3>
         </div>
         <div className="tech-card" data-aos="fade-up">
-          <FaCloud className="tech-icon" />
+          <SiGooglecloud  className="tech-icon" />
           <h3>Google Cloud</h3>
         </div>
         <div className="tech-card" data-aos="fade-up">

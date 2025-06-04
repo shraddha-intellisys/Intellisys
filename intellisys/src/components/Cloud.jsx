@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Cloud.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "aos/dist/aos.css";
-import cloud2 from "../assestes/cloud2.png";
+import cloud_computing from "../assestes/cloud_computing.png";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 
@@ -144,7 +144,7 @@ const CloudSolutions = () => {
 
         <div className="benefits-container">
           <div className="benefits-image">
-            <img src={cloud2} alt="Cloud Benefits" />
+            <img src={cloud_computing} alt="Cloud Benefits" />
           </div>
 
           <div className="benefits-content">

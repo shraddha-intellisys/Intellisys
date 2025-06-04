@@ -2,7 +2,7 @@ import React from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import "./Website.css";
-import webdesign from "../assestes/webdesign.png";
+import web_design from "../assestes/web_design.png";
 import website from "../assestes/website.png";
 
 const Website = () => {
@@ -89,7 +89,7 @@ const Website = () => {
 
           <div className="benefits-imageweb" data-aos="zoom-in">
             <img
-              src={webdesign}
+              src={web_design}
               alt="Web Development Benefits"
               className="benefits-imgapp"
             />

@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="contact-container">
           <div className="contact-form">
             <h2>Get in Touch</h2>
-            <form onSubmit={handleSubmit}>
+            <form id="contacti" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Full Name</label>
                 <input

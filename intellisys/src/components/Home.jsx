@@ -22,8 +22,6 @@ import l5 from "../assestes/l5.png";
 import l6 from "../assestes/l6.png";
 
 const Home = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const sliderRef = useRef(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -33,8 +31,7 @@ const Home = () => {
     description: "",
   });
   const [responseMessage, setResponseMessage] = useState("");
-  const [reviews, setReviews] = useState([]);
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
 
   useEffect(() => {
     AOS.init({
@@ -43,13 +40,6 @@ const Home = () => {
     });
   }, []);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -111,17 +101,6 @@ const Home = () => {
     }
   };
 
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) =>
-      prev === reviews.length - 1 ? 0 : prev + 1
-    );
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) =>
-      prev === 0 ? reviews.length - 1 : prev - 1
-    );
-  };
 
   const [counts, setCounts] = useState({
     employees: 0,
@@ -577,8 +556,8 @@ const Home = () => {
             <option value="Cyber Security">Cyber Security</option>
             <option value="Cloud">Cloud</option>
             <option value="UIUX">UI/UX</option>
-            <option value="UIUX">Full Stack Development</option>
-            <option value="UIUX">Software Testing</option>
+            <option value="fullstackdeveloper">Full Stack Development</option>
+            <option value="softwaretesting">Software Testing</option>
             <option value="Other">Other</option>
           </select>
           <input

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/Intellisys", {
+    await mongoose.connect("mongodb+srv://Intellisys_1:BaeBSavi5vPAeXFT@cluster1.ofsblwc.mongodb.net/Intellisys?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

@@ -100,6 +100,7 @@
     .powerbi-icon,
     .flutter-icon {
       width: 45px;
+      height: auto;
     }
   }
 
@@ -129,6 +130,7 @@
     
     .flutter-icon {
       width: 40px;
+      height: auto;
     }
   }
 
@@ -161,5 +163,6 @@
     .flutter-icon {
       width: 35px;
       margin-bottom: 10px;
+      height: auto;
     }
   }
