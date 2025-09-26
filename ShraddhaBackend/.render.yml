@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: shraddhabackend
+    env: node
+    region: singapore
+    rootDir: ShraddhaBackend
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false   # <-- secure, set in Render dashboard
