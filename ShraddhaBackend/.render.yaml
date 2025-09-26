@@ -3,7 +3,7 @@ services:
     name: shraddha-backend
     env: node
     region: singapore
-    rootDir: Intellisys/ShraddhaBackend
+    rootDir: ShraddhaBackend
     buildCommand: "npm install"
     startCommand: "npm start"
     plan: free
