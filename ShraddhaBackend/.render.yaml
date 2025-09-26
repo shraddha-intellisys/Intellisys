@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: shraddha-backend
+    name: shraddhabackend
     env: node
     region: singapore
     rootDir: ShraddhaBackend
